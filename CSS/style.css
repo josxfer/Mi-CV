@@ -120,6 +120,7 @@ body{
     color: var(--color_de_letra_titulos);
     font-size: 26px;
     text-align: center;
+    margin: 0;
   }
   
   .hero_image_figure{
@@ -228,7 +229,88 @@ body{
 
 /* Tercer bloque, experiencia y hobbies */
 
+.experience{
+    background-color: var(--color_de_fondo);
+    color: var(--color_normal_letra);
+    padding-bottom: 30px;
+}
 
+.experience_pack{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
+.elEspectador{
+    width: 490px;
+}
 
+.espectador_tittle{
+    font-size: 2em;
+    margin: 0px 30px 15px 0;
+}
 
+.espectador_image{
+    margin: 0;
+}
+
+.espectador_image_img{
+    border: solid 3px aqua;
+    object-fit: cover;
+    width: 490px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.espectador_div_text{
+    margin: 23px;
+    margin-top: -54px;
+    position: relative;
+    background-color: #ead2a3;
+    color: black;
+    padding: 15px;
+    padding-top: 1px;
+    font-size: 19px;
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.espectador_text{
+    font-size: 1em;
+    margin: .1em;
+    word-spacing: -.1em;
+  }
+
+  .flexible_video{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  
+  .youtube_video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video_div_text{
+    margin-top: 17px;
+  }
+  
+  .other_image_img{
+    border: solid 3px aqua;
+    object-fit: cover;
+    width: 490px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .video_div_text{
+    margin-top: 20px;
+  }
