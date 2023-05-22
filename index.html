@@ -1,45 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi CV</title>
-    <link rel="icon" href="./images/icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
-<body>
+    <link rel="icon" href="./images/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
     <i class="icon-menu burger_button" id="burger_menu"></i>
-  <header class="header">
-    <div class="container" id="container_header">
-      <h1>
-        Mi CV
-      </h1>
-      <nav class="menu">
-        <ul class="skills">
-          <li class="first_link">
-            <a href="#me" class="link_me">Acerca de mi</a>
-          </li>
-          <li>
-            <a href="#study" class="link">Estudios</a>
-          </li>
-          <li>
-            <a href="#skills_link" class="link">Habilidades</a>
-          </li>
-          <li>
-            <a href="#experience" class="link">Experiencia</a>
-          </li>
-          <li>
-            <a href="#hobbies" class="link">Hobbies</a>
-          </li>
-          <li>
-            <a href="#contact" class="link">Contáctame</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-</body>
+    <header class="header">
+      <div class="container" id="container_header">
+        <h1>Mi CV</h1>
+        <nav class="nav_menu">
+          <ul class="skills">
+            <li class="first_link">
+              <a href="#me" class="link_me">Acerca de mi</a>
+            </li>
+            <li>
+              <a href="#study" class="link">Estudios</a>
+            </li>
+            <li>
+              <a href="#skills_section" class="link">Habilidades</a>
+            </li>
+            <li>
+              <a href="#hobbies" class="link">Hobbies</a>
+            </li>
+            <li>
+              <a href="#experience" class="link">Experiencia</a>
+            </li>
+            <li>
+              <a href="#contact" class="link">Contáctame</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero_text">
+            <div class="hero_text1">
+              <h2 id="me">Acerca de mi</h2>
+              <p>
+                <span class="color_word">Jose</span> Fernando Espinosa Beltran
+                <br />
+                36 años <br />
+                Bogotá D.C. <br />
+                josxfer@gmail.com
+              </p>
+            </div>
+            <div class="hero_text2">
+              <h2 id="study">Estudios</h2>
+              <p>
+                <span class="color_word">Desarrollador</span> FullStack Dev.F -
+                2023 <br />
+                Tecnólogo en Gestion Financiera y Tesoreria Sena - 2013 <br />
+                Bachiller acádemico colegio Gimnasio Americano - 2007
+              </p>
+            </div>
+          </div>
+          <figure class="hero_image_figure">
+            <img
+              src="./images/image_profile1.jpg"
+              alt="Imagen principal del sitio"
+              width="auto"
+              height="auto"
+              class="image-profile"
+            />
+          </figure>
+          <!-- <figure>
+          <img src="/" alt="Imagen principal para moviles" width="auto" height="auto" class="image-profile2">
+        </figure> -->
+        </div>
+      </section>
+      <section class="box-skills skills_section">
+        <div class="box-skills-container container">
+          <hr />
+          <h2 id="misHabilidades">Mis Habilidades</h2>
+          <div class="skill-block">
+            <div class="detalles">
+              <span class="span_skills">HTML</span>
+              <span class="span_skills">90%</span>
+            </div>
+            <div class="menu">
+              <div id="html-menu"></div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="detalles">
+              <span class="span_skills">CSS</span>
+              <span class="span_skills">75%</span>
+            </div>
+            <div class="menu">
+              <div id="css-menu"></div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="detalles">
+              <span class="span_skills">JAVASCRIPT</span>
+              <span class="span_skills">40%</span>
+            </div>
+            <div class="menu">
+              <div id="javascript-menu"></div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="detalles">
+              <span class="span_skills">REACT</span>
+              <span class="span_skills">30%</span>
+            </div>
+            <div class="menu">
+              <div id="react-menu"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experience">
+      <div class="container">
+        <hr />
+        <div>
+          <h2 id="experience" class="experience_tittle">
+            Experiencia
+          </h2>
+        </div>
+        <div class="experience_pack">
+          <article class="elEspectador">
+            <div class="espectador_div_tittle">
+              <h4 class="espectador_tittle">
+                El Espectador
+              </h4>
+            </div>
+            <div class="espectador_div_img_text">
+              <figure class="espectador_image">
+                <img src="./images/espectador.jpg" alt="logo El Espectador" width="490" class="espectador_image_img">
+              </figure>
+              <div class="espectador_div_text">
+                <p class="espectador_text">
+                  <span>Cargo: </span>Lider de Suscripciones. <br>
+                  Funciones: Jefe de grupo, ventas, servicio al cliente. <br>
+                  2013 - Hasta la fecha
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="atento">
+            <div class="atento_div_tittle">
+              <h4 class="atento_tittle">
+                Atento
+              </h4>
+            </div>
+            <div class="atento_div_img_text">
+              <figure class="atento_image">
+                <img src="./images/logo_atento.jpg" alt="Logo de Atento" width="490" class="atento_image_img">
+              </figure>
+              <div class="atento_div_text">
+                <p class="atento_text">
+                    <span>Cargo: </span>Asesor de Call Center. <br>
+                    Funciones: Ventas y servicio al cliente. <br>
+                    2012 - 2013
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    </main>
+  </body>
 </html>

@@ -1,14 +1,23 @@
+/* Variables de CSS para usar dentro del proyecto */
+:root{
+    --color_especial_de_letra: aqua;
+    --color_de_fondo:black;
+    --color_de_letra_titulos:orange;
+    --color_normal_letra:white;
+}
+
 body{
     font-family: 'Oswald', sans-serif;
     margin: 0;
     position: relative;
   }
 
+  /* Estilos del header */
   .header{
     height: 70px;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: var(--color_de_fondo);
     flex-wrap: wrap;
     position: fixed;
     left: 0;
@@ -18,13 +27,14 @@ body{
   }
   
   #container_header{
-    border-bottom: solid .2em aqua;
+    border-bottom: solid .2em var(--color_especial_de_letra);
   }
 
   h1{
     margin: 1px 0 0 0;
-    color: #F1C40F;
+    color: var(--color_de_letra_titulos);
     font-size: 45px;
+    cursor: pointer;
   }
   
   ul{
@@ -60,19 +70,165 @@ body{
   }
 
   .link{
-    color: white;
+    color: var(--color_normal_letra);
   }
 
   .link:hover{
     text-decoration: underline;
-    color: aqua;
+    color: var(--color_especial_de_letra);
   }
 
   .link_me{
-    color: aqua;
+    color: var(--color_especial_de_letra);
   }
 
   .link_me:hover{
     text-decoration: underline;
-    color: #F1C40F;
+    color: var(--color_de_letra_titulos);
   }
+
+/* Inicio de estilos del main */
+/* Estilos del hero */
+  .hero{
+    height: auto;
+    background-color: var(--color_de_fondo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .hero_text{
+    width: 50%;
+    height: auto;
+    background-color: var(--color_de_fondo);  
+  }
+
+  .hero_text p{
+    color: var(--color_normal_letra);
+    font-size: 22px;
+  }
+
+  h2{
+    color: var(--color_de_letra_titulos);
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  h4{
+    color: var(--color_de_letra_titulos);
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  .hero_image_figure{
+    width: 45%;
+    margin: 0;
+  }
+
+  .image-profile{
+    object-fit: cover;
+    width: 100%;
+  }
+
+  hr{
+    width: auto;
+    margin: 0;
+    height: 1px;
+    background: var(--color_especial_de_letra);
+    border: solid 1px var(--color_especial_de_letra);
+  }
+
+  /* Inicio de estilos de la seccion de habilidades */
+
+  .span_skills{
+    font-size: 22px;
+  }
+
+  .box-skills{
+    width: 100%;
+    min-width: 59rem;
+    background-color: var(--color_de_fondo);
+    color: var(--color_normal_letra);
+    padding-bottom: 30px;
+}
+
+.box-skills-container{
+    width: 100%;
+    padding: 2rem 1rem 5rem;
+}
+
+.skill-block:not(:last-child){
+    margin-bottom: 2.4rem;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position: relative;
+    border: 1px solid var(--color_especial_de_letra);
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 1rem;
+    border-radius: 10px;
+    background-color: var(--color_especial_de_letra);
+}
+
+/* Animacion de las habilidades */
+
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra {
+    100%{
+        width: 90%;
+    }
+}
+
+#css-menu{
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra {
+    100%{
+        width: 75%;
+    }
+}
+
+#javascript-menu{
+    animation: javascript-barra 2s forwards;
+}
+
+@keyframes javascript-barra {
+    100%{
+        width: 40%;
+    }
+}
+
+#react-menu{
+    animation: react-barra 2s forwards;
+}
+
+@keyframes react-barra {
+    100%{
+        width: 30%;
+    }
+}
+
+/* Tercer bloque, experiencia y hobbies */
+
+
+
+
+
