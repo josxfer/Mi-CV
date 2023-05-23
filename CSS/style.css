@@ -2,8 +2,9 @@
 :root{
     --color_especial_de_letra: aqua;
     --color_de_fondo:black;
-    --color_de_letra_titulos:orange;
     --color_normal_letra:white;
+    --color_fondo_suave:#ead2a3;
+    --color_titulos:orange;
 }
 
 body{
@@ -32,7 +33,7 @@ body{
 
   h1{
     margin: 1px 0 0 0;
-    color: var(--color_de_letra_titulos);
+    color: var(--color_titulos);
     font-size: 45px;
     cursor: pointer;
   }
@@ -111,13 +112,13 @@ body{
   }
 
   h2{
-    color: var(--color_de_letra_titulos);
+    color: var(--color_titulos);
     font-size: 40px;
     text-align: center;
   }
   
   h4{
-    color: var(--color_de_letra_titulos);
+    color: var(--color_titulos);
     font-size: 26px;
     text-align: center;
     margin: 0;
@@ -255,7 +256,7 @@ body{
 }
 
 .espectador_image_img{
-    border: solid 3px aqua;
+    border: solid 3px var(--color_especial_de_letra);
     object-fit: cover;
     width: 490px;
     height: 250px;
@@ -266,8 +267,8 @@ body{
     margin: 23px;
     margin-top: -54px;
     position: relative;
-    background-color: #ead2a3;
-    color: black;
+    background-color: var(--color_fondo_suave);
+    color: var(--color_de_fondo);
     padding: 15px;
     padding-top: 1px;
     font-size: 19px;
@@ -281,6 +282,8 @@ body{
     margin: .1em;
     word-spacing: -.1em;
   }
+
+  /* La parte de hobbies, se reutilizó el codigo de experiencia */
 
   .flexible_video{
     width: 100%;
@@ -304,7 +307,7 @@ body{
   }
   
   .other_image_img{
-    border: solid 3px aqua;
+    border: solid 3px var(--color_especial_de_letra);
     object-fit: cover;
     width: 490px;
     height: 300px;
@@ -314,3 +317,147 @@ body{
   .video_div_text{
     margin-top: 20px;
   }
+
+/* Estilos de la seccion de contacto */
+
+/* Queda mucho pendiente para cuando sepa JS Xd */
+
+.contact_tittle{
+    width: auto;
+    margin: inherit;
+    padding: 30px 0 20px 0;
+  }
+  
+  .contact{
+    background-color: var(--color_de_fondo);
+    color: var(--color_normal_letra);
+    flex-wrap: wrap;
+    padding: 0 2em 2em 2em;
+  }
+
+  .contact_block{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact_div_tittles{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact_div_followme{
+    text-align: end;
+  }
+  
+  .input_name{
+    height: auto;
+    width: 35em;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--color_de_fondo);
+    background-color: var(--color_fondo_suave);
+    margin-bottom: 10px;
+    border: solid 1px var(--color_especial_de_letra);
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .input_email{
+    height: auto;
+    width: 35em;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--color_de_fondo);
+    background-color: var(--color_fondo_suave);
+    margin-bottom: 10px;
+    border: solid 1px var(--color_de_fondo);
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .textarea_message{
+    height: auto;
+    width: 35em;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--color_de_fondo);
+    background-color: var(--color_fondo_suave);
+    margin-bottom: 10px;
+    border: solid 1px var(--color_especial_de_letra);
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .submit{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 1px 0 30px 5px;
+    font-size: 18px;
+    color: var(--color_de_fondo);
+    background-color: var(--color_especial_de_letra);
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    border: solid 1px var(--color_fondo_suave);
+    font-family: 'Oswald', sans-serif;
+  }
+
+  form > input:hover{
+    opacity: 0.9;
+  }
+  .submit:hover{
+    opacity: 0.9;
+  }
+
+  /* Estilos de redes sociales */
+  
+  .social{
+    display: flex;
+    align-items: center;
+    height: 200px;
+  }
+
+  .social div{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+  }
+
+svg{
+    fill: var(--color_especial_de_letra);
+}
+svg:hover{
+    fill: var(--color_normal_letra);
+}
+
+.footer{
+    background-color: var(--color_de_fondo);
+    color: var(--color_normal_letra);
+    flex-wrap: wrap;
+    padding: 0 2em 2em 2em;
+  }
+  
+  .footer_line{
+    display: flex;
+  }
+  
+  .footer_link{
+    display: flex;
+  }
+
+  .footer_div_block{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer_hipervinculo{
+    text-decoration: none;
+    color: var(--color_especial_de_letra);
+  }
+
+  .corazon{
+    color: red;
+  }
+
+  
