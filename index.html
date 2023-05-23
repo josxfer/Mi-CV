@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <i class="icon-menu burger_button" id="burger_menu"></i>
+    <i class="icon-menu burger_button" id="burger_menu"><svg class="gb_g" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></i>
     <header class="header">
       <div class="container" id="container_header">
-        <h1>Mi CV</h1>
+        <h1 class="logo">Mi CV</h1>
         <nav class="nav_menu">
           <ul class="skills">
             <li class="first_link">
@@ -26,7 +26,7 @@
               <a href="#study" class="link">Estudios</a>
             </li>
             <li>
-              <a href="#skills_section" class="link">Habilidades</a>
+              <a href="#misHabilidades" class="link">Habilidades</a>
             </li>
             <li>
                 <a href="#experience" class="link">Experiencia</a>
@@ -42,21 +42,21 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section id="me" class="hero">
         <div class="container">
           <div class="hero_text">
             <div class="hero_text1">
-              <h2 id="me">Acerca de mi</h2>
+              <h2 >Acerca de mi</h2>
               <p>
                 <span class="color_word">Jose</span> Fernando Espinosa Beltran
                 <br />
                 36 años <br />
-                Bogotá D.C. <br />
+                Bogotá D.C. <br id="study"  />
                 josxfer@gmail.com
               </p>
             </div>
             <div class="hero_text2">
-              <h2 id="study">Estudios</h2>
+              <h2>Estudios</h2>
               <p>
                 <span class="color_word">Desarrollador</span> FullStack Dev.F -
                 2023 <br />
@@ -66,7 +66,7 @@
             </div>
           </div>
           <figure class="hero_image_figure">
-            <img
+            <img 
               src="./images/image_profile1.jpg"
               alt="Imagen principal del sitio"
               width="auto"
@@ -74,15 +74,12 @@
               class="image-profile"
             />
           </figure>
-          <!-- <figure>
-          <img src="/" alt="Imagen principal para moviles" width="auto" height="auto" class="image-profile2">
-        </figure> -->
         </div>
       </section>
-      <section class="box-skills skills_section">
+      <section id="misHabilidades" class="box-skills skills_section">
         <div class="box-skills-container container">
           <hr />
-          <h2 id="misHabilidades">Mis Habilidades</h2>
+          <h2 class="misHabilidades">Mis Habilidades</h2>
           <div class="skill-block">
             <div class="detalles">
               <span class="span_skills">HTML</span>
@@ -115,17 +112,17 @@
               <span class="span_skills">REACT</span>
               <span class="span_skills">30%</span>
             </div>
-            <div class="menu">
+            <div id="experience"  class="menu">
               <div id="react-menu"></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="experience">
+      <!-- <section class="experience">
         <div class="container">
           <hr />
           <div>
-            <h2 id="experience" class="experience_tittle">Experiencia</h2>
+            <h2  class="experience_tittle">Experiencia</h2>
           </div>
           <div class="experience_pack">
             <article class="elEspectador">
@@ -165,7 +162,7 @@
                   />
                 </figure>
                 <div class="espectador_div_text">
-                  <p class="espectador_text">
+                  <p id="hobbies" class="espectador_text">
                     <span>Cargo: </span>Asesor de Call Center. <br />
                     Funciones: Ventas y servicio al cliente. <br />
                     2012 - 2013
@@ -176,7 +173,7 @@
           </div>
           <hr />
           <div>
-            <h2 id="experience" class="experience_tittle">Hobbies</h2>
+            <h2  class="experience_tittle">Hobbies</h2>
           </div>
           <div class="experience_pack">
             <article class="elEspectador">
@@ -276,9 +273,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
           <hr />
           <div class="footer_div_block">
@@ -294,6 +291,7 @@
             </div>
           </div>
         </div>
-      </footer>
+    </footer> -->
+    <script src="script.js"></script>
   </body>
 </html>

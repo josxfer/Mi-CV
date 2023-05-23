@@ -13,6 +13,11 @@ body{
     position: relative;
   }
 
+  /* Menú del responsive */
+  .burger_button{
+    display: none;
+  }
+
   /* Estilos del header */
   .header{
     height: 70px;
@@ -68,6 +73,7 @@ body{
     height: inherit;
     flex-wrap: wrap;
     flex: 1;
+    padding: 0 10px 0 10px;
   }
 
   .link{
@@ -85,7 +91,7 @@ body{
 
   .link_me:hover{
     text-decoration: underline;
-    color: var(--color_de_letra_titulos);
+    color: var(--color_normal_letra);
   }
 
 /* Inicio de estilos del main */
@@ -144,6 +150,9 @@ body{
 
   /* Inicio de estilos de la seccion de habilidades */
 
+  .misHabilidades{
+    margin: 20px 0 0;
+  }
   .span_skills{
     font-size: 22px;
   }
@@ -158,7 +167,7 @@ body{
 
 .box-skills-container{
     width: 100%;
-    padding: 2rem 1rem 5rem;
+    padding: 2rem 1rem 2rem;
 }
 
 .skill-block:not(:last-child){
@@ -234,6 +243,10 @@ body{
     background-color: var(--color_de_fondo);
     color: var(--color_normal_letra);
     padding-bottom: 30px;
+}
+
+.experience_tittle{
+    margin: 20px 0 0;
 }
 
 .experience_pack{
@@ -431,6 +444,7 @@ svg:hover{
     fill: var(--color_normal_letra);
 }
 
+/* Estilos del footer */
 .footer{
     background-color: var(--color_de_fondo);
     color: var(--color_normal_letra);
@@ -460,4 +474,119 @@ svg:hover{
     color: red;
   }
 
+  /* Responsive Design */
+
+  @media screen and (max-width:1023px){
+    h1{
+        font-size: 40px;
+       }
+    h2{
+        font-size: 35px;
+    }
+    .hero_text p{
+        font-size: 17px;
+    }
+  }
+
   
+  @media screen and (max-width:767px){
+    h1{
+        font-size: 35px;
+       }
+    h2{
+        font-size: 30px;
+    }
+    .hero_text p{
+        font-size: 15px;
+    }
+ 
+  }
+
+ 
+  @media screen and (max-width:700px){
+    .burger_button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--color_especial_de_letra);
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        color: var(--color_de_fondo);
+        position: fixed;
+        z-index: 8;
+        left: 10px;
+        top: 7px;
+      }
+
+    .header{
+        display: block;
+        height: auto;
+        position: initial;
+    }
+
+    .logo{
+        text-align: center;
+      }
+
+    header nav ul{
+        display: block;
+    }
+
+    header nav ul li a{
+        align-items: center;
+    }
+
+    header nav ul li{
+        font-size: 1.5em;
+    }
+    .first_link{
+        padding-top: 1em;
+    }
+    .nav_menu{
+        position: fixed;
+        background: rgba(0, 0, 0, .95);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 80vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: normal;
+        justify-content: left;
+        text-align: left;
+        transition: .3s;
+        opacity: 0.9;
+      }
+    .is_active{
+        left: 0;
+    }
+
+    .gb_g{
+        fill: var(--color_de_fondo);
+    }
+    .gb_g:hover{
+        fill: var(--color_de_fondo);
+    }
+    .hero{
+        margin-top: 0;
+    }
+    .container{
+        margin-top: 0;
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size: 30px;
+       }
+    h2{
+        font-size: 25px;
+    }
+    .hero_text p{
+        font-size: 11px;
+    }
+
+    .box-skills{
+        min-width: auto;
+    }
+  }
