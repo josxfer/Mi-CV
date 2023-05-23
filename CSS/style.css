@@ -11,6 +11,7 @@ body{
     font-family: 'Oswald', sans-serif;
     margin: 0;
     position: relative;
+    display: grid;
   }
 
   /* Menú del responsive */
@@ -30,6 +31,7 @@ body{
     right: 0;
     top: 0;
     z-index: 7;
+    padding: 0 10px;
   }
   
   #container_header{
@@ -112,9 +114,10 @@ body{
     background-color: var(--color_de_fondo);  
   }
 
-  .hero_text p{
+  .profile-description{
     color: var(--color_normal_letra);
     font-size: 22px;
+    padding-left: 15px;
   }
 
   h2{
@@ -167,7 +170,7 @@ body{
 
 .box-skills-container{
     width: 100%;
-    padding: 2rem 1rem 2rem;
+    padding: 0rem 3rem 0rem;
 }
 
 .skill-block:not(:last-child){
@@ -483,9 +486,36 @@ svg:hover{
     h2{
         font-size: 35px;
     }
-    .hero_text p{
+    .profile-description{
         font-size: 17px;
     }
+    .box-skills-container{
+      width: auto;
+    }
+    .span_skills{
+      font-size: 14px;
+    }
+    .skill-block:not(:last-child){
+      margin-bottom: 1.4rem;
+    }
+    main{
+      display: grid;
+    }
+    .experience_pack{
+      justify-content: center;
+    }
+    .contact_block{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .titulo2{
+      display: none;
+    }
+
+    .social div{
+      margin-right: 40px;
+    }
+
   }
 
   
@@ -496,7 +526,7 @@ svg:hover{
     h2{
         font-size: 30px;
     }
-    .hero_text p{
+    .profile-description{
         font-size: 15px;
     }
  
@@ -515,14 +545,13 @@ svg:hover{
         color: var(--color_de_fondo);
         position: fixed;
         z-index: 8;
-        left: 10px;
-        top: 7px;
+        left: 25px;
+        top: 16px;
       }
 
     .header{
-        display: block;
-        height: auto;
-        position: initial;
+        display: flex;
+        justify-content: center;
     }
 
     .logo{
@@ -582,7 +611,7 @@ svg:hover{
     h2{
         font-size: 25px;
     }
-    .hero_text p{
+    .profile-description{
         font-size: 11px;
     }
 
